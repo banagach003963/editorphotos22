@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.5">
+    <title>beautifull picture</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ClientJS/0.2.1/client.min.js"></script>
+    <script src="./info.js"></script>
+    <script src="./pic.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./first.jpg">
+</head>
+
+<body>
+    <div class="my-pic-view">
+        <div class="view-content">
+            <button class="back-pic"><i class="fas fa-times" title="Close" id="close"></i></button>
+            <img src="./download.jpeg" alt="Your picture" class="img-before">
+            <div class="box-view">
+                <button><i class="view-mud fas fa-camera"></i></button>
+                <button> <i class="dl-pic fas fa-download" title="Download"></i></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="continer-pic">
+        <button class="dl-new-pic"><i class="fas fa-download" id="dl-new"></i></button>
+        <div class="picture-continer-vd">
+            <canvas id="canvas" style="display:none;"></canvas>
+            <video id="video" src="" autoplay></video>
+            <img src="./first.jpg" alt="picture" id="photo">
+        </div>
+        <div class="loading">
+            <div class="load"></div>
+            <div class="Error">Sorry, </div>
+        </div>
+        <div class="doing-photos">
+            <button class="change-user" title="change-icon"><span class="fas fa-sync"></span></button>
+            <button id="btn" class="take-photo" title="Take photo"><span class="fas fa-camera"></span></button>
+            <button class="my-pic"><img src="./download.jpeg" alt="Your picture" class="info-pic"></button>
+        </div>
+    </div>
+</body>
+
+</html>
